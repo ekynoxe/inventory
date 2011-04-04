@@ -1,0 +1,12 @@
+<h1>Manage projects</h1>
+<div class="inner_nav"><%= link_to 'Add a project', new_project_path %></div>
+
+<%= will_paginate @projects, :class=>'pagination top' %>
+<% if @projects.empty? %>
+<div>There are no projects registered yet</div>
+<% else %>
+<div id="items_list" class="clearfix">
+<%= render :partial => "projects/project_details", :collection => @projects, :as => :p %>
+</div>
+<% end -%>
+<%= will_paginate @projects %>

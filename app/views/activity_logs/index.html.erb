@@ -1,0 +1,9 @@
+<%= will_paginate @activity_logs, :class=>'pagination top' %>
+<% if @activity_logs.empty? %>
+<div>There is no recent activity</div>
+<% else %>
+<div id="items_list" class="clearfix">
+<%= render :partial => "activity_logs/activity_log_details", :collection => @activity_logs, :as => :a %>
+</div>
+<% end -%>
+<%= will_paginate @activity_logs %>

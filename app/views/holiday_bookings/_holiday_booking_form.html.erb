@@ -1,0 +1,21 @@
+<% form_for @holiday_booking do |f| %>
+	<%= f.error_messages %>
+<ul>
+	<li>
+		<%= f.label :nb_days, 'Number of days days:', :class=>'label' %>
+		<%= f.text_field :nb_days, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.label :start_date, 'From', :class=>'label' %>
+		<%= f.date_select :start_date, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.label :end_date, 'To', :class=>'label' %>
+		<%= f.date_select :end_date, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.submit submit %>
+		<%= link_to 'Cancel', (session[:return_to] || root_url) %>
+	</li>
+</ul>
+<% end %>

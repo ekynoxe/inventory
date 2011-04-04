@@ -1,0 +1,30 @@
+<h1>Your holidays <span class="light small">(<%= current_holder.remaining_holidays %> days left)</span></h1>
+<div class="inner_nav"><%= link_to 'New booking', new_holiday_booking_url %></div>
+
+
+<% flash.each do |key, msg| %>
+   <%= content_tag :div, msg, :class => [key, " message"], :id => "notice_ #{key}" %>
+   <% content_tag :script, :type => "text/javascript" do -%>
+       setTimeout("new Effect.Fade('notice_<%= key %>');", 3000);
+   <% end %>
+<% end %>
+
+<div class="notice orange">
+	The holiday booking utility is intended to be used only for your own records, and not for any administrative purposes.<br/>You are still <u>required</u> to complete the necessary form with administration.
+</div>
+
+<div class="grey_block">
+	<h3>Annual allowance <span class="highlight"><%= current_holder.year_holidays %> days</span></h3>
+	<h3>Brought forward <span class="highlight"><%= current_holder.transferred_holidays %> days</span></h3>
+	<h3>Booked to date <span class="highlight"><%= current_holder.booked_holidays %> days</span></h3>
+</div>
+
+<div id="items_list" class="clearfix">
+<% if @holiday_bookings.empty? %>
+<div>You have not made any holiday booking yet</div>
+<% else %>
+<%= will_paginate @holiday_bookings, :class=>'pagination top' %>
+<%= render :partial => "holiday_bookings/holiday_booking_details", :collection => @holiday_bookings, :as => :h %>
+<%= will_paginate @holiday_bookings %>
+<% end -%>
+</div>

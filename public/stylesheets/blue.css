@@ -1,0 +1,24 @@
+a{color: #55D3E8;}
+.light{color: #acb6c9;}
+.highlight{color: #3dbcd1;}
+.orange{color: #f60;}
+#header-wrap{background-color: #b8f0f9;}
+#header a{
+	background-color: #55d3e8;
+	color: #fff;
+	text-shadow:1px 1px #3dbcd1;
+}
+#header a:hover{
+	background-color: #fff;
+	color: #55d3e8;
+	text-shadow:1px 1px #bbb;
+}
+#sidebar h4{color: #55D3E8;}
+#sidebar ul li a{color: #2d3442;}
+#sidebar ul li a:hover,#sidebar ul li a.selected{
+	color: #fff;
+	background-color: #b8c3d6;
+}
+			
+.item, .line{border-bottom: 1px solid #cfd5e2;}
+.item p.serials{ color: #acb6c9;}

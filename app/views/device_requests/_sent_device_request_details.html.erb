@@ -1,0 +1,10 @@
+<div class="item clearfix">
+	<div class="rightInfo">
+		<%= d.created_at -%>
+	</div>
+	<span class="icon <%= d.device.device_type.name.gsub(/[ ]/, '') -%>"></span>
+	<div class="leftInfo">
+		<p>You requested <b><%= link_to d.device.description, edit_device_path(d.device) -%></b><%= " <span class='small'>("+d.device.project.name+")</span>" unless d.device.project.blank? -%> to <b><%= d.requested_holder.name -%></b></p>
+		<p><%= link_to "cancel request", device_request_path(d), :method=>:delete, :confirm=>'Are you sure?' %></p>
+	</div>
+</div>

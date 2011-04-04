@@ -1,0 +1,35 @@
+<li class="item <%= format_borrowed_lent_class(d) -%> clearfix">
+	<span class="icon <%= d.device_type.name.downcase.gsub(/[ ]/, '') -%>"></span>
+	<div class="rightInfo">
+		<%= d.holder.name -%>
+<% if d.project -%>
+<br/><span class='light'><%= d.project.name -%></span>
+<% end -%>
+	</div>
+	<div class="leftInfo">
+		<h2><%= d.description -%></h2>
+		<p class="comments"><%= d.comments -%></p>
+		<p class="serials"><%= d.format_serial_numbers -%></p>
+<% if d.borrowedfrom && d.borrowedfrom!='' -%>
+		<p>Borrowed from <%= d.borrowedfrom -%></p>
+<% end -%>
+
+<% if !d.borrower_id.nil? && d.borrower_id!=0 -%>
+		<p>Lent to <%= d.borrower.name -%></p>
+<% elsif d.borrower_id==0 -%>
+		<p>External lend to <%= d.lent_to_details -%></p>
+<% end -%>
+
+<% if isAdmin? || d.holder.id == current_holder.id -%>
+		<%= link_to 'edit', edit_device_path(d) -%>
+<% end -%>
+
+<% if find_device_request(d) %>
+		<span class="small orange">you have requested this device</span>
+<% elsif d.holder.id != current_holder.id %>
+		<%= link_to 'request device', request_device_path(d) -%>
+<% end -%>
+		<!--<%= d.received -%>
+		<%= d.returned unless d.returned=nil -%>-->
+	</div>
+</li>

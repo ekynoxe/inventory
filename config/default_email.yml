@@ -1,0 +1,5 @@
+development:
+  default_email: notifications@email.com
+
+production:
+  default_email: notifications@email.com

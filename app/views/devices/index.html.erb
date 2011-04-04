@@ -1,0 +1,58 @@
+<h1>Devices</h1>
+
+<% flash.each do |key, msg| %>
+   <%= content_tag :div, msg, :class => [key, " message"], :id => "notice_ #{key}" %>
+   <% content_tag :script, :type => "text/javascript" do -%>
+       setTimeout("new Effect.Fade('notice_<%= key %>');", 3000);
+   <% end %>
+<% end %>
+
+<% form_tag search_url, :method=>'get', :id=>'search_form' do -%>
+	<div class="clearfix">
+	<%= label_tag :tags, 'search with keywords', :class=>'label' %>
+		<%= text_field_tag 'search_tags', params[:tags], :class=>'input', :name=>'tags' %>
+		<%= submit_tag 'search' %>
+		<%= link_to ' clear', devices_path unless params[:tags].nil? %>
+	</div>
+	<div>
+		<br/>
+		<%= label_tag :project %>
+		<%= select :project,
+					:id,
+					options_for_select(@global_projects.map {|u| [u.name,u.id]},params[:project_id].to_i),
+					{:include_blank=>'All'},
+					{:onchange=>"location = '#{projectsdevices_path}/'+this.value"}
+		%>
+		<%
+			if !params[:project_id]
+				classname="selected"
+			end
+		-%>
+		<%= label_tag :holder %>
+		<%= select :holder,
+					:id,
+					options_for_select(@global_holders.map {|u| [u.name,u.id]},params[:holder_id].to_i),
+					{:include_blank=>'All'},
+					{:onchange=>"location = '#{holdersdevices_path}/'+this.value"}
+		%>
+		<%= label_tag :device_type %>
+		<%= select :device_type,
+					:id,
+					options_for_select(@global_device_types.map {|u| [u.name,u.id]},params[:device_type_id].to_i),
+					{:include_blank=>'All'},
+					{:onchange=>"location = '#{typesdevices_path}/'+this.value"}
+		%>
+	</div>
+<% end %>
+
+<%= will_paginate @devices, :class=>'pagination' %>
+<div id="items_list" class="clearfix">
+<% if @devices.empty? %>
+There are no devices registered yet
+<% else %>
+<ul>
+<%= render :partial => "devices/device_details", :collection => @devices, :as => :d %>
+</ul>
+<% end -%>
+</div>
+<%= will_paginate @devices, :class=>'pagination'  %>

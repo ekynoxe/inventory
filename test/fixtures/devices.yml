@@ -1,0 +1,975 @@
+1:
+  id: 1
+  project_id: 
+  devicetype: mobile phone
+  description: iPhone 16GB
+  serialnumber: 
+  imei: 011434000537835
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Mathieu Davy
+  comments: box charger dock cards and accessories with Menuka Jain
+
+
+
+2:
+  id: 2
+  project_id: 
+  devicetype: mobile phone
+  description: iPhone 16GB
+  serialnumber: 
+  imei: 01143400104172
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Thuc Huyn
+  comments: 
+
+
+
+3:
+  id: 3
+  project_id: 2
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 356996014808967
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Mathieu Davy
+  comments: Label FOX
+
+
+
+4:
+  id: 4
+  project_id: 6
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 352255018260350
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Mathieu Davy
+  comments: Label FT R&D UK / IMSE NOKIA N95(1) Lid broken fixed with tape
+
+
+
+5:
+  id: 5
+  project_id: 5
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 358998018675192
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: Mobeen Ali
+  holder: Yasir Al-Haidery
+  comments: Label Team1
+
+
+
+6:
+  id: 6
+  project_id: 5
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 358998018671456
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: Mobeen Ali
+  holder: Mathieu Davy
+  comments: Label Team4 Lid broken fixed with blue tack
+
+
+
+7:
+  id: 7
+  project_id: 
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 353094024476356
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Mathieu Davy
+  comments: No battery no lid
+
+
+
+8:
+  id: 8
+  project_id: 4
+  devicetype: laptop
+  description: IBook G4
+  serialnumber: 4H5331EESE7
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: 
+
+
+
+9:
+  id: 9
+  project_id: 7
+  devicetype: mobile phone
+  description: Nokia N96
+  serialnumber: 
+  imei: 356406021975197
+  received: 2008-10-17
+  borrowedfrom: 
+  lentto: 
+  holder: Claudiu Stefanescu
+  comments: 
+
+
+
+10:
+  id: 10
+  project_id: 6
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 356996014797814
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: Label EDIET3
+
+
+
+11:
+  id: 11
+  project_id: 4
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 356962019436394
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: Label UCS3
+
+
+
+12:
+  id: 12
+  project_id: 8
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 356996013308803
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: Ricardo
+  holder: 
+  comments: Label SENTIENCE1
+
+
+
+13:
+  id: 13
+  project_id: 8
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 352255018260087
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: Label SENTIENCE3
+
+
+
+14:
+  id: 14
+  project_id: 8
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 356996013307540
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: Ricardo
+  holder: 
+  comments: Label SENTIENCE2
+
+
+
+15:
+  id: 15
+  project_id: 9
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 353094023353804
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Yasir Al-Haidery
+  comments: Label ASPEN1
+
+
+
+16:
+  id: 16
+  project_id: 
+  devicetype: mobile phone
+  description: Nokia N95
+  serialnumber: 
+  imei: 353094023351519
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: No Label in Xavier GAME storage
+
+
+
+17:
+  id: 17
+  project_id: 1
+  devicetype: laptop
+  description: Mac book
+  serialnumber: W884212R1AX
+  imei: 
+  received: 2008-10-29
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+18:
+  id: 18
+  project_id: 1
+  devicetype: laptop
+  description: Laptop1
+  serialnumber: 
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+19:
+  id: 19
+  project_id: 1
+  devicetype: laptop
+  description: Dell Inspirion 1720
+  serialnumber: vista business FC4YF-7QRX-HBKHF-VD342-RJ38K
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: pc 07018 Suhail Khan did not return the charger LBL P/N = DY205A00
+
+
+
+20:
+  id: 20
+  project_id: 1
+  devicetype: server
+  description: Dell servers
+  serialnumber: 
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: In comms Room
+
+
+
+21:
+  id: 21
+  project_id: 1
+  devicetype: laptop
+  description: MID #1
+  serialnumber: 
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+22:
+  id: 22
+  project_id: 1
+  devicetype: laptop
+  description: MID #2
+  serialnumber: 
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+23:
+  id: 23
+  project_id: 1
+  devicetype: laptop
+  description: MID #3
+  serialnumber: 059V93BP900002
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: Suhail Khan
+  holder: 
+  comments: 
+
+
+
+24:
+  id: 24
+  project_id: 1
+  devicetype: game console
+  description: XBOX 360
+  serialnumber: 325823574205
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+25:
+  id: 25
+  project_id: 1
+  devicetype: game console
+  description: XBOX 360
+  serialnumber: 311811681805
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+26:
+  id: 26
+  project_id: 1
+  devicetype: game console
+  description: Play Stastion 3
+  serialnumber: 02-273430370-2623609-CECHG03
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+27:
+  id: 27
+  project_id: 1
+  devicetype: game console
+  description: Nintendo Wii + wii sport
+  serialnumber: LEH146227903
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+28:
+  id: 28
+  project_id: 1
+  devicetype: laptop
+  description: HTC advantage 
+  serialnumber: 
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: Suhail Khan
+  holder: 
+  comments: 
+
+
+
+29:
+  id: 29
+  project_id: 1
+  devicetype: mobile phone
+  description: iphone 3G 16G white
+  serialnumber: 878349M61R4
+  imei: 011714001710634
+  received: 2008-11-04
+  borrowedfrom: 
+  lentto: 
+  holder: 
+  comments: 
+
+
+
+30:
+  id: 30
+  project_id: 
+  devicetype: mobile phone
+  description: iphone 3G 16G white
+  serialnumber: 5K9112WJ1R4 for 878349M61R4
+  imei: 011811007289694
+  received: 2009-07-01
+  borrowedfrom: 
+  lentto: 
+  holder: Team cupboard
+  comments: 
+
+
+
+31:
+  id: 31
+  project_id: 1
+  devicetype: mobile phone
+  description: Samsung SGH-U900
+  serialnumber: 
+  imei: 352442027777554
+  received: 2008-09-01
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+32:
+  id: 32
+  project_id: 
+  devicetype: mobile phone
+  description: LG Renoir KC910
+  serialnumber: 
+  imei: 357090020371084
+  received: 2008-12-05
+  borrowedfrom: 
+  lentto: 
+  holder: Team cupboard
+  comments: 
+
+
+
+33:
+  id: 33
+  project_id: 
+  devicetype: mobile phone
+  description: LG Renoir KC910
+  serialnumber: 
+  imei: 357090020371951
+  received: 2008-12-05
+  borrowedfrom: 
+  lentto: 
+  holder: Maria Prokopi
+  comments: Temporary personal use no SIM when given
+
+
+
+34:
+  id: 34
+  project_id: 2
+  devicetype: mobile phone
+  description: 3 INQ
+  serialnumber: 
+  imei: 354541020118555
+  received: 2008-12-09
+  borrowedfrom: 
+  lentto: 
+  holder: Yaser
+  comments: 1GB micro SD card in phone | PAYG THREE. Menuka has phone and charger box in team cupboard
+
+
+
+35:
+  id: 35
+  project_id: 2
+  devicetype: mobile phone
+  description: 3 INQ
+  serialnumber: 
+  imei: 354541020117359
+  received: 2008-12-09
+  borrowedfrom: 
+  lentto: Alexander Sanchez
+  holder: 
+  comments: 1GB micro SD card in phone | PAYG THREE
+
+
+
+36:
+  id: 36
+  project_id: 2
+  devicetype: mobile phone
+  description: 3 INQ
+  serialnumber: 
+  imei: 354541020125576
+  received: 2008-12-12
+  borrowedfrom: 
+  lentto: 
+  holder: Richard tucker
+  comments: 1GB micro SD card in phone | PAYG THREE
+
+
+
+37:
+  id: 37
+  project_id: 2
+  devicetype: mobile phone
+  description: Google G1 dev phone
+  serialnumber: 
+  imei: 351676030198768
+  received: 2009-04-21
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: LABEL NCS2
+
+
+
+38:
+  id: 38
+  project_id: 2
+  devicetype: mobile phone
+  description: Google G1 dev phone
+  serialnumber: 
+  imei: 351676030199311
+  received: 2009-04-21
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: LABEL NCS1
+
+
+
+39:
+  id: 39
+  project_id: 2
+  devicetype: mobile phone
+  description: Google G1 dev phone
+  serialnumber: 
+  imei: 351676030191946
+  received: 2009-05-26
+  borrowedfrom: 
+  lentto: 
+  holder: Aymeric Castelain
+  comments: LABEL NCS3
+
+
+
+40:
+  id: 40
+  project_id: 1
+  devicetype: laptop
+  description: Mac book
+  serialnumber: WQ841A5P1AX
+  imei: 
+  received: 2008-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Mathieu Davy
+  comments: 
+
+
+
+41:
+  id: 41
+  project_id: 2
+  devicetype: mobile phone
+  description: LG Calisto
+  serialnumber: 904KPLC535040
+  imei: 004401095350407
+  received: 2009-07-24
+  borrowedfrom: 
+  lentto: 
+  holder: Nishanta Pelendage
+  comments: LG prototype device for FOX testing - 
+
+
+
+42:
+  id: 42
+  project_id: 1
+  devicetype: mobile phone
+  description: HTC Touch
+  serialnumber: 
+  imei: 35575701866316702
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+43:
+  id: 43
+  project_id: 1
+  devicetype: mobile phone
+  description: Sony Ericsson W910i
+  serialnumber: 
+  imei: 354432026479235
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+44:
+  id: 44
+  project_id: 1
+  devicetype: mobile phone
+  description: Nokia 6120c
+  serialnumber: 
+  imei: 358640017511156
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+45:
+  id: 45
+  project_id: 1
+  devicetype: mobile phone
+  description: Nokia 6220c
+  serialnumber: 
+  imei: 352921026876251
+  received: 2008-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: Micro SD in phone
+
+
+
+46:
+  id: 46
+  project_id: 
+  devicetype: laptop
+  description: Macbook
+  serialnumber: WQ8099NU0P1
+  imei: 
+  received: 2007-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Yasir Al-Haidery
+  comments: 
+
+
+
+47:
+  id: 47
+  project_id: 
+  devicetype: mobile phone
+  description: 2Nami prototype phyone from boston
+  serialnumber: 
+  imei: 
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Richard Tibbett
+  comments: 
+
+
+
+48:
+  id: 48
+  project_id: 
+  devicetype: mobile phone
+  description: Nokia N97
+  serialnumber: 
+  imei: 354225030412162
+  received: 2009-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Maria Prokopi
+  comments: 
+
+
+
+49:
+  id: 49
+  project_id: 2
+  devicetype: 3G card
+  description: ICON 225 3G USB receiver
+  serialnumber: 
+  imei: 357952023196950
+  received: 2009-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Nishanta Pelendage
+  comments: 
+
+
+
+50:
+  id: 50
+  project_id: 
+  devicetype: mobile phone
+  description: Nokia N97
+  serialnumber: 
+  imei: 354225030412618
+  received: 2009-01-01
+  borrowedfrom: 
+  lentto: 
+  holder: Kashif Chaudhry
+  comments: 
+
+
+
+51:
+  id: 51
+  project_id: 
+  devicetype: mobile phone
+  description: Nokia 6220
+  serialnumber: 
+  imei: 352921026875600
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Ahtisham Gul
+  comments: 
+
+
+
+52:
+  id: 52
+  project_id: 
+  devicetype: mobile phone
+  description: Nokia 5800
+  serialnumber: 
+  imei: 353184039751966
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Ahtisham Gul
+  comments: 
+
+
+
+53:
+  id: 53
+  project_id: 
+  devicetype: mobile phone
+  description: Sony Ericsson K810i
+  serialnumber: 
+  imei: 353153020328290
+  received: 
+  borrowedfrom: 
+  lentto: 
+  holder: Ahtisham Gul
+  comments: 
+
+
+
+54:
+  id: 54
+  project_id: 10
+  devicetype: mobile phone
+  description: HTC Hero
+  serialnumber: HT9A1L900630
+  imei: 
+  received: 2009-10-21
+  borrowedfrom: Rennes
+  lentto: 
+  holder: Julien Hebert
+  comments: 
+
+
+
+55:
+  id: 55
+  project_id: 1
+  devicetype: mobile phone
+  description: iPhone 3GS 32GB
+  serialnumber: 86942PB23NR
+  imei: 012030005394716
+  received: 2009-11-16
+  borrowedfrom: 
+  lentto: 
+  holder: Xavier Delplanque
+  comments: 
+
+
+
+56:
+  id: 56
+  project_id: 
+  devicetype: mobile phone
+  description: iPhone 3GS 32GB
+  serialnumber: 86942P1Z3NR
+  imei: 012031003539385
+  received: 2009-11-16
+  borrowedfrom: 
+  lentto: 
+  holder: 
+  comments: 
+
+
+
+57:
+  id: 57
+  project_id: 
+  devicetype: mobile phone
+  description: iPhone 3GS 32GB
+  serialnumber: 86942P2H3NR
+  imei: 012030006580313
+  received: 2009-11-16
+  borrowedfrom: 
+  lentto: 
+  holder: 
+  comments: 
+
+
+
+58:
+  id: 58
+  project_id: 
+  devicetype: mobile phone
+  description: iPhone 3GS 32GB
+  serialnumber: 86942KNF3NR
+  imei: 012030000270465
+  received: 2009-11-16
+  borrowedfrom: 
+  lentto: 
+  holder: Thuc Huyn
+  comments: 
+
+
+
+59:
+  id: 59
+  project_id: 
+  devicetype: mobile phone
+  description: Motorola DEXT (Motoblur)
+  serialnumber: 
+  imei: 356691030194225
+  received: 2009-11-16
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments: Micro SD 2GB in phone
+
+
+
+60:
+  id: 60
+  project_id: 3
+  devicetype: mobile phone
+  description: HTC Hero
+  serialnumber: HT99WL904161
+  imei: 357988023083269
+  received: 2009-11-25
+  borrowedfrom: 
+  lentto: 
+  holder: Jeam-Louis Fuccelaro
+  comments: 
+
+
+
+61:
+  id: 61
+  project_id: 
+  devicetype: mobile phone
+  description: samsung gt-I8320 (vodafone 360)
+  serialnumber: R5WSA38546K
+  imei: 353629030858871
+  received: 2009-11-25
+  borrowedfrom: 
+  lentto: 
+  holder: Long Lam
+  comments: 
+
+
+
+62:
+  id: 62
+  project_id: 3
+  devicetype: mobile phone
+  description: samsung gt-I8320 (vodafone 360)
+  serialnumber: R5WSA38563R
+  imei: 353629030859044
+  received: 2009-11-25
+  borrowedfrom: 
+  lentto: 
+  holder: Julien Hebert
+  comments:  useraccount= servicesevolution password= passion
+
+
+
+63:
+  id: 63
+  project_id: 
+  devicetype: laptop
+  description: Macbook Pro 15.4
+  serialnumber: W8941L4L7XJ
+  imei: 
+  received: 2009-11-30
+  borrowedfrom: 
+  lentto: 
+  holder: 
+  comments: 
+
+
+
+64:
+  id: 64
+  project_id: 
+  devicetype: laptop
+  description: Macbook Pro 15.4
+  serialnumber: W8941L2G7XJ
+  imei: 
+  received: 2009-11-30
+  borrowedfrom: 
+  lentto: 
+  holder: 
+  comments: 
+
+
+
+65:
+  id: 65
+  project_id: 
+  devicetype: laptop
+  description: Macbook Pro 15.4
+  serialnumber: W8941L567XJ
+  imei: 
+  received: 2009-11-30
+  borrowedfrom: 
+  lentto: 
+  holder: 
+  comments: 
+
+
+

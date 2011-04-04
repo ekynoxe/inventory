@@ -1,0 +1,87 @@
+<% form_for @device do |f| %>
+	<%= f.error_messages %>
+<ul>
+	<li>
+		<%= f.label :device_type_id, 'Type', :class=>'label' %>
+		<% if @new || isAdmin? %>
+			<%= f.select :device_type_id, @global_device_types.map{ |t| [t.name, t.id] },{:include_blank=>'- Select a device type -'} , :class=>'input' %>
+		<% else %>
+			<div class="disabledfield  light"><%= @device.device_type.name %></div>
+		<% end %>
+	</li>
+	<li>
+		<%= f.label :description, 'Description (*)', :class=>'label' %>
+		<% if @new || isAdmin? %>
+			<%= f.text_field :description, :class=>'input' %>
+		<% else %>
+			<div class="disabledfield  light"><%= @device.description %></div>
+		<% end %>
+	</li>
+	<li>
+		<%= f.label :imei, 'IMEI', :class=>'label' %>
+		<% if @new || isAdmin? %>
+			<%= f.text_field :imei, :class=>'input' %>
+		<% else %>
+			<div class="disabledfield  light"><%= @device.imei %></div>
+		<% end %>
+	</li>
+	<li>
+		<%= f.label :received, 'Date received', :class=>'label' %>
+		<% if @new || isAdmin? %>
+			<%= f.date_select :received, :class=>'input' %>
+		<% else %>
+			<div class="disabledfield  light"><%= @device.received %></div>
+		<% end %>
+	</li>
+	<li>
+		<%= f.label :serialnumber, 'Serial Number', :class=>'label' %>
+		<% if @new || isAdmin? %>
+			<%= f.text_field :serialnumber, :class=>'input' %>
+		<% else %>
+			<div class="disabledfield light"><%= @device.serialnumber %></div>
+		<% end %>
+	</li>
+	<li>
+		<%= f.label :borrowedfrom, 'Borrowed from', :class=>'label' %>
+		<%= f.text_field :borrowedfrom, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.label :borrower_id, 'Lent to', :class=>'label' %>
+		<%= f.select :borrower_id, to_lend_to_list, {:include_blank=>'- No one -'}, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.label :lent_to_details, 'Details for external let', :class=>'label' %>
+		<%= f.text_field :lent_to_details, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.label :holder_id, 'Assign to', :class=>'label' %>
+		<% if isAdmin? %>
+			<%= f.select :holder_id, @global_holders.map{ |h| [h.name, h.id] } ,{:include_blank=>'- Select someone or type name -'}, :class=>'input' %>
+		<% elsif @new || @device.holder.id == current_holder.id %>
+			<%= f.select :holder_id, @team_holders.map{ |h| [h.name, h.id] } ,{:include_blank=>'- Select a holder -'}, :class=>'input' %>
+		<% else %>
+			<div class="disabledfield light"><%= @device.holder.name %></div>
+		<% end %>
+	</li>
+	<li>
+		<%= f.label :comments, 'Comments', :class=>'label' %>
+		<%= f.text_area :comments, :class=>'input textarea' %>
+	</li>
+	<li>
+		<%= f.label :project_id, 'Project', :class=>'label' %>
+		<% if isAdmin? %>
+			<%= f.select :project_id, @global_projects.map{ |p| [p.name, p.id] },{:include_blank=>'- Select a project -'} , :class=>'input' %>
+		<% elsif @new %>
+			<%= f.select :project_id, @team_projects.map{ |p| [p.name, p.id] },{:include_blank=>'- Select a project -'} , :class=>'input' %>
+		<% else %>
+			<div class="disabledfield  light"><%= @device.project.name %></div>
+		<% end %>
+	</li>
+	<li>
+		<% if @new || isAdmin? || @device.holder.id == current_holder.id %>
+			<%= f.submit submit %>
+		<% end %>
+		<%= link_to 'Cancel', (session[:return_to] || root_url) %>
+	</li>
+</ul>
+<% end %>

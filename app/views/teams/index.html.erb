@@ -1,0 +1,9 @@
+<h1>Manage teams</h1>
+<div class="inner_nav"><%= link_to 'Add a team', new_team_path %></div>
+<% if @teams.empty? %>
+<div>There are no teams registered yet</div>
+<% else %>
+<div id="items_list" class="clearfix">
+<%= render :partial => "teams/team_details", :collection => @teams, :as => :t %>
+</div>
+<% end -%>

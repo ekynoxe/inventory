@@ -1,0 +1,18 @@
+<div id="sidebar">
+	<ul>
+		<li><h4>devices</h4></li>
+		<li><%= link_to 'all devices', devices_path %></li>	
+		<li><%= link_to '<span class="small">my devices</span>', mydevices_path %></li>
+		<li><%= link_to '<span class="small">add a device</span>', new_device_path %></li>
+		<li><%= link_to format_device_requests_link, device_requests_path %></li>
+		<!--li><h4>holidays</h4></li>
+		<li><%= link_to 'bookings <span class="small">('+ current_holder.remaining_holidays.to_s+' days left)</span>', holiday_bookings_path %></li-->
+	<% if current_holder.isAdmin %>
+		<li><h4>admin</h4></li>
+		<li><%= link_to "manage teams", teams_path %></li>
+		<li><%= link_to "manage users", holders_path %></li>
+		<li><%= link_to "manage projects", projects_path %></li>
+		<li><%= link_to "manage device types", device_types_path %></li>
+	<% end %>
+	</ul>
+</div>

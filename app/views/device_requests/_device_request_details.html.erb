@@ -1,0 +1,12 @@
+<div class="item clearfix">
+	<div class="rightInfo">
+		<%= d.created_at -%>
+	</div>
+	<span class="icon <%= d.device.device_type.name.gsub(/[ ]/, '') -%>"></span>
+	<div class="leftInfo">
+		<p><b><%= d.requesting_holder.name -%></b> requested <b><%= link_to d.device.description, edit_device_path(d.device) -%></b><%= " <span class='small'>("+d.device.project.name+")</span>" unless d.device.project.blank? -%></p>
+<% if d.device.borrowedfrom && d.device.borrowedfrom!='' -%>
+		<p>Borrowed from <%= d.device.borrowedfrom -%></p>
+<% end -%>
+	</div>
+</div>

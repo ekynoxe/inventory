@@ -1,0 +1,12 @@
+<h1>Account details</h1>
+<div class="inner_nav">
+<% if isAdmin? || @holder.id == current_holder.id -%>
+	<%= link_to 'Edit my account', edit_holder_url(@holder) %> |
+	<%= link_to 'change password', holder_change_password_index_url(current_holder) %>
+<% end -%>
+</div>
+<div class="grey_block">
+	<h3 class="clearfix">Email <span class="highlight"><%= @holder.email %></span></h3>
+	<h3 class="clearfix">Name <span class="highlight"><%= @holder.name %></span></h3>
+	<h3 class="clearfix">Team <span class="highlight"><%= @holder.team.name %></span></h3>
+</div>

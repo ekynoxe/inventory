@@ -1,0 +1,10 @@
+<div class="item <%= format_validated_class(h) -%> clearfix">
+	<div class="rightInfo">
+		<%= link_to 'edit', edit_holiday_booking_url(h) -%> 
+		<%= link_to 'delete', holiday_booking_url(h), :method=>:delete, :confirm=>'are you sure?' -%>
+	</div>
+	<div class="leftInfo">
+		<h3><%= h.nb_days -%> days</h3>
+		<p><%= h.start_date %> - <%= h.end_date %></p>
+	</div>
+</div>

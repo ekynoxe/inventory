@@ -1,0 +1,13 @@
+<h1>Request a device</h1>
+<% form_for @device_request,:url=>request_device_url, :method=>:post do |f| %>
+	<%= f.error_messages %>
+<ul>
+<li>Do you really want to request the device <b><%= @device_request.device.description %></b> to <b><%= @device.holder.name %></b>?</li>
+<li>
+	<%= f.submit 'YES' %>
+	<%= link_to 'No', (session[:return_to] || root_url) %>
+</li>
+</ul>
+<%= f.hidden_field :requesting_holder_id, {:value=>current_holder.id} %>
+<%= f.hidden_field :requested_holder_id, {:value=>@device.holder.id} %>
+<% end %>

@@ -1,0 +1,20 @@
+<%= render(:partial => "layouts/html_head") -%>
+    <body>
+        <div id='container_wrap'>
+			<div id='header-wrap' class='clearfix'>
+			<%= render(:partial => "layouts/header") %>
+			</div>
+        	<div id='container'>
+				<div id='content-wrap' class='clearfix'>
+				<% if current_holder %>
+					<%= render(:partial => "layouts/sidebar") %>
+				<% end %>
+	    			<div id='content' class="clearfix">
+		            	<%= yield %>
+					</div>
+				</div>
+	        </div>
+			<%= render(:partial => "layouts/footer") -%>
+		</div>
+    </body>
+</html>

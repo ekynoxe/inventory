@@ -1,0 +1,7 @@
+<div class="line clearfix">
+	<span class="icon <%= d.name.downcase.gsub(/[ ]/, '') -%>"></span>
+	<div class="leftInfo">
+		<h2><%= d.name %></h2>
+		<%= link_to 'edit', edit_device_type_path(d) %>
+	</div>
+</div>

@@ -1,0 +1,20 @@
+<h1>Change your password</h1>
+
+<%= flash[:notice] %>
+<% form_for current_holder, :url=> holder_change_password_index_url(current_holder) do |f| %>
+	<%= f.error_messages %>
+	<ul>
+		<li>
+			<%= f.label :password, 'Password', :class=>'label' %>
+			<%= f.password_field :password, :class=>'input' %>
+		</li>
+		<li>
+			<%= f.label :password_confirmation, 'Confirm password', :class=>'label' %>
+			<%= f.password_field :password_confirmation, :class=>'input' %>
+		</li>
+		<li>
+			<%= f.submit 'change' %>
+			<%= link_to 'Cancel',  (session[:return_to] || edit_holder_path(current_holder)) %>
+		</li>
+	</ul>
+<% end %>

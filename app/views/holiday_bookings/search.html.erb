@@ -1,0 +1,9 @@
+<%= will_paginate @devices, :class=>'pagination top' %>
+<% if @devices.empty? %>
+<div>There are no devices registered yet</div>
+<% else %>
+<div id="items_list" class="clearfix">
+<%= render :partial => "devices/device_details", :collection => @devices, :as => :d %>
+</div>
+<% end -%>
+<%= will_paginate @devices %>

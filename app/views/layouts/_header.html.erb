@@ -1,0 +1,9 @@
+<div id="header" class="clearfix">
+	<%= link_to '<span>Lab Tools home</span>', root_path, :id=>"home_link" %>
+	<% if current_holder %>
+	<ul class="clearfix">
+			<li><span id="user_name"><%= link_to current_holder.name+' <span class="small">('+current_holder.team.name+')</span>', holder_path(current_holder) %></span></li>
+			<li><%= link_to "logout", logout_path, :id=>'logout_lnk' %></li>
+	</ul>
+    <% end -%>
+</div>

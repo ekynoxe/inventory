@@ -1,0 +1,11 @@
+<h1>Manage users</h1>
+<div class="inner_nav"><%= link_to 'Add a user', new_holder_path %></div>
+<%= will_paginate @holders, :class=>'pagination top' %>
+<% if @holders.empty? %>
+<div>There are no holders registered yet</div>
+<% else %>
+<div id="items_list" class="clearfix">
+<%= render :partial => "holders/holder_details", :collection => @holders, :as => :h %>
+</div>
+<% end -%>
+<%= will_paginate @holders %>

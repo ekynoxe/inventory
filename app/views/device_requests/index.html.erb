@@ -1,0 +1,21 @@
+<h1>Received requests</h1>
+<%= will_paginate @received_device_requests, :class=>'pagination top' %>
+<% if @received_device_requests.empty? %>
+<div>No one requested any device from you at this point</div>
+<% else %>
+<div id="items_list" class="clearfix">
+	<%= render :partial => "device_requests/device_request_details", :collection => @received_device_requests, :as => :d %>
+</div>
+<% end -%>
+<%= will_paginate @received_device_requests %>
+
+<h1>Sent requests</h1>
+<%= will_paginate @sent_device_requests, :class=>'pagination top' %>
+<% if @sent_device_requests.empty? %>
+<div>You did not send any requests yet</div>
+<% else %>
+<div id="items_list" class="clearfix">
+	<%= render :partial => "device_requests/sent_device_request_details", :collection => @sent_device_requests, :as => :d %>
+</div>
+<% end -%>
+<%= will_paginate @sent_device_requests %>

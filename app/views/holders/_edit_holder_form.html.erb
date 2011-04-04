@@ -1,0 +1,25 @@
+<%= flash[:notice] %>
+<% form_for @holder do |f| %>
+	<%= f.error_messages %>
+<ul>
+	<li>
+		<%= f.label :email, 'Email', :class=>'label' %>
+		<%= f.text_field :email, :class=>'input' %>
+	</li>
+	<li>
+		<%= f.label :name, 'Full Name', :class=>'label' %>
+		<%= f.text_field :name, :class=>'input' %>
+	</li>
+	<% if isAdmin? %>
+	<li>
+		<%= f.label :team_id, 'Team: ', :class=>'label' %>
+		<%= f.select :team_id, Team.all.map{ |h| [h.name, h.id] }, {:include_blank=>'- Select a team -'}, {:class=>'input'} %>
+	</li>
+	<% end %>
+	<li>
+		<%= f.submit 'save' %>
+		<%= link_to 'Cancel', (session[:return_to] || root_url) %>
+	</li>
+</ul>
+<% end %>
+</div>

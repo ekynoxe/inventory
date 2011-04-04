@@ -1,0 +1,9 @@
+<h1>Manage devices types</h1>
+<div class="inner_nav"><%= link_to 'Add a device type', new_device_type_path %></div>
+<% if @device_types.empty? %>
+<div>There are no device types yet</div>
+<% else %>
+<div id="items_list" class="clearfix">
+<%= render :partial => "device_types/device_type_details", :collection => @device_types, :as => :d %>
+</div>
+<% end -%>

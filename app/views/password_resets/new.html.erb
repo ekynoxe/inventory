@@ -1,0 +1,15 @@
+<h1>Reset your password</h1>
+<div class="notice">Enter your email below below and instructions to reset your password will be sent to you:</div>
+<%= flash[:notice] %>
+<% form_tag password_resets_path do %>
+<ul>
+	<li>
+		<label class="label">Email:</label>
+		<%= text_field_tag "email", nil, :class=>'input' %>
+	</li>
+	<li>
+		<%= submit_tag "Reset my password" %>
+		<%= link_to '<span class="small">back to login</span>', login_url %>
+	</li>
+</ul>
+<% end %>

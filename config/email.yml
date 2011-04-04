@@ -1,0 +1,12 @@
+development:
+  delivery_method: :smtp
+  smtp_settings:
+    address: smtp.email.com
+    port: 25
+    
+production:
+  delivery_method: :smtp
+  smtp_settings:
+    address: smtp.email.com
+    port: 25
+    domain: 
